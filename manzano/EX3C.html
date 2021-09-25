@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Apostila">
+    <meta name="keywords" content="Javascript">
+    <meta name="author" content="Lucas">
+
+    <title>Apostila Manzano Página 26 atividade 4-C</title>
+</head>
+
+<body>
+    <script>
+        /*Em uma eleição sindical concorreram ao cargo de presidente três candidatos (A, B e C). Durante a 
+apuração dos votos foram computados votos nulos e votos em branco, além dos votos válidos para 
+cada candidato. Deve ser criado um programa de computador que efetue a leitura da quantidade de 
+votos válidos para cada candidato, além de efetuar também a leitura da quantidade de votos nulos e 
+votos em branco. Ao final o programa deve apresentar o número total de eleitores, considerando votos 
+válidos, nulos e em branco; o percentual correspondente de votos válidos em relação à quantidade de 
+eleitores; o percentual correspondente de votos válidos do candidato A em relação à quantidade de 
+eleitores; o percentual correspondente de votos válidos do candidato B em relação à quantidade de 
+eleitores; o percentual correspondente de votos válidos do candidato C em relação à quantidade de 
+eleitores; o percentual correspondente de votos nulos em relação à quantidade de eleitores; e por último 
+o percentual correspondente de votos em branco em relação à quantidade de eleitores*/
+
+        var a = parseInt(prompt("Digite a quantidade de votos para o candidato A: "));
+        var b = parseInt(prompt("Digite a quantidade de votos para o candidato A: "));
+        var c = parseInt(prompt("Digite a quantidade de votos para o candidato A: "));
+        var brancos = parseInt(prompt("Digite a quantidade de votos brancos: "));
+        var nulos = parseInt(prompt("Digite a quantidade de votos nulos: "));
+        var total = a + b + c + brancos + nulos;
+        var porcentagemTotal = total / 100;
+
+        alert(
+            "O total de votos foi de " + total + ". Tendo:\n \n" +
+            "O candadidato A recebido  " + a / porcentagemTotal + "% dos votos;\n" +
+            "O candadidato B recebido " + b / porcentagemTotal + "% dos votos;\n" +
+            "O candadidato B recebido " + c / porcentagemTotal + "% dos votos;\n" +
+            "Em branco represetando " + brancos / porcentagemTotal + "% dos votos;\n" +
+            "Nulos representando " + nulos / porcentagemTotal + "% dos votos.\n"
+        )
+    </script>
+</body>
+
+</html>

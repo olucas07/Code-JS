@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Exercício 7. a da Apostila">
+    <meta name="keywords" content="Javascript">
+    <meta name="author" content="Lucas">
+
+    <title>Apostila Manzano Página 25 atividade H</title>
+</head>
+
+<body>
+    <script>
+        /*Efetuar a leitura de cinco números inteiros e identificar o maior e o menor valores.*/
+
+        var v1 = parseFloat(prompt("Digite o primeiro número: "));
+        var v2 = parseFloat(prompt("Digite o segundo número: "));
+        var v3 = parseFloat(prompt("Digite o terceiro número: "));
+        var v4 = parseFloat(prompt("Digite o quarto número: "));
+        var v5 = parseFloat(prompt("Digite o quinto número: "));
+
+        if (v1 > v2 && v1 > v3 && v1 > v4 && v1 > v5) {
+            alert("O maior valor digitado foi " + v1);
+        } else if (v2 > v1 && v2 > v3 && v2 > v4 && v2 > v5) {
+            alert("O maior valor digitado foi " + v2);
+        } else if (v3 > v1 && v3 > v2 && v3 > v4 && v3 > v5) {
+            alert("O maior valor digitado foi " + v3);
+        } else if (v4 > v1 && v4 > v2 && v4 > v3 && v4 > v5) {
+            alert("O maior valor digitado foi " + v4);
+        } else {
+            alert("O maior valor digitado foi " + v5);
+        }
+
+        if (v1 < v2 && v1 < v3 && v1 < v4 && v1 < v5) {
+            alert("O maior valor digitado foi " + v1);
+        } else if (v2 < v1 && v2 < v3 && v2 < v4 && v2 < v5) {
+            alert("O maior valor digitado foi " + v2);
+        } else if (v3 < v1 && v3 < v2 && v3 < v4 && v3 < v5) {
+            alert("O maior valor digitado foi " + v3);
+        } else if (v4 < v1 && v4 < v2 && v4 < v3 && v4 < v5) {
+            alert("O maior valor digitado foi " + v4);
+        } else {
+            alert("O maior valor digitado foi " + v5);
+        }
+    </script>
+</body>
+
+</html>

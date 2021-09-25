@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Exercício 7. a da Apostila">
+    <meta name="keywords" content="Javascript">
+    <meta name="author" content="Lucas">
+    
+    <title>Apostila Manzano Página 41 atividade 4-B</title>
+</head>
+
+<body>
+    <script>
+        /*Efetuar a leitura de um valor inteiro positivo ou negativo e apresentar o número lido como sendo um 
+valor positivo, ou seja, o programa deverá apresentar o módulo de um número fornecido. Lembre-se 
+de verificar se o número fornecido é menor que zero; sendo, multiplique-o por -1.*/
+
+        var valor = parseFloat(prompt("Digite um valor positivo ou negativo: "));
+
+        if (valor < 0) {
+            alert("O valor, convertido para positivo, é " + valor * -1);
+        } else {
+            alert("O valor é " + valor);
+        }
+    </script>
+
+</body>
+
+</html>

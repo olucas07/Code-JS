@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Exercício 7. a da Apostila">
+    <meta name="keywords" content="Javascript">
+    <meta name="author" content="Lucas">
+
+    <title>Apostila Manzano Página 41 atividade F</title>
+</head>
+<body>
+    <script>
+    /*Efetuar a leitura de três valores (variáveis A, B e C) e apresentá-los dispostos em ordem crescente*/
+
+        var n1 = parseInt(prompt("Digite o primeiro número: "));
+        var n2 = parseInt(prompt("Digite o segundo número: "));
+        var n3 = parseInt(prompt("Digite o terceiro número: "));
+
+        if (n1 > n2 && n1 > n3) {
+            if (n2 > n3) {
+                alert(n3 + ", " + n2 + ", " + n1);
+            } else {
+                alert(n2 + ", " + n3 + ", " + n1);
+            }
+        } else if (n2 > n3) {
+            if (n1 > n3) {
+                alert(n3 + ", " + n1 + ", " + n2);
+            } else {
+                alert(n1 + ", " + n3 + ", " + n2);
+            }
+        } else {
+            if (n1 > n2) {
+                alert(n2 + ", " + n1 + ", " + n3);
+            } else {
+                alert(n1 + ", " + n2 + ", " + n3);
+            }
+        }
+    </script>
+</body>
+</html>

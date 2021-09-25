@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Exercício 7. a da Apostila">
+    <meta name="keywords" content="Javascript">
+    <meta name="author" content="Lucas">
+
+    <title>Apostila Manzano Página 50 atividade 5-1-H</title>
+</head>
+
+<body>
+    <script>
+        /*Elaborar um programa que possibilite calcular a área total de uma residência (sala, cozinha, 
+banheiro, quartos, área de serviço, quintal, garagem, etc.). O programa deve solicitar a entrada do 
+nome, a largura e o comprimento de um determinado cômodo. Em seguida, deve apresentar a área 
+do cômodo lido e também uma mensagem solicitando do usuário a confirmação de continuar 
+calculando novos cômodos. Caso o usuário responda “NAO”, o programa deve apresentar o valor 
+total acumulado da área residencial.*/
+
+        var resposta = "s";
+        var Total = 0;
+        do {
+            var comodo;
+            var largura;
+            var comprimento;
+            comodo = prompt("Digite o nome do cômodo: ");
+            largura = parseFloat(prompt("Digite a largura: "));
+            comprimento = parseFloat(prompt("Digite o comprimento: "));
+            Total += largura * comprimento;
+            resposta = prompt("O comodo" + comodo + "Tem uma área total de " + largura * comprimento + "m²;\n" +
+                "Deseja inserir outro cômodo? (S/N)");
+        } while (resposta == "sim" || resposta == "SIM" || resposta == "s" || resposta == "S")
+
+        alert("A área total da casa é de " + Total + "m²");
+    </script>
+</body>
+
+</html>

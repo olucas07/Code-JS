@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Apostila">
+    <meta name="keywords" content="Javascript">
+    <meta name="author" content="Lucas">
+
+    <title>Apostila Manzano Página 66 atividade 6-1-K</title>
+</head>
+
+<body>
+    <script>
+        /*Elaborar um programa que apresente como resultado o valor do fatorial dos valores ímpares 
+situados na faixa numérica de 1 a 10. 
+*/
+
+        var valor = 1;
+        
+        for (var contador = 1; contador <= 10; contador++) {
+            if (contador % 2 != 0) {
+                valor = contador
+                for (contador2 = contador - 1; contador2 > 1; contador2--) {
+                    valor = valor * contador2;
+                }
+                alert(valor);
+            }
+        }
+    </script>
+</body>
+
+</html>

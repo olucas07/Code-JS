@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Apostila">
+    <meta name="keywords" content="Javascript">
+    <meta name="author" content="Lucas">
+
+    <title>Apostila Manzano Página 25 atividade D</title>
+</head>
+
+<body>
+
+    <script>
+        /* Efetuar o cálculo da quantidade de litros de combustível gasta em uma viagem, utilizando um 
+automóvel que faz 12 Km por litro. Para obter o cálculo, o usuário deve fornecer o tempo gasto 
+(TEMPO) e a velocidade média (VELOCIDADE) durante a viagem. Desta forma, será possível obter a 
+distância percorrida com a fórmula DISTANCIA ← TEMPO * VELOCIDADE. Possuindo o valor da 
+distância, basta calcular a quantidade de litros de combustível utilizada na viagem com a fórmula 
+LITROS_USADOS ← DISTANCIA / 12. Ao final, o programa deve apresentar os valores da velocidade 
+média (VELOCIDADE), tempo gasto na viagem (TEMPO), a distancia percorrida (DISTANCIA) e a 
+quantidade de litros (LITROS_USADOS) utilizada na viagem */
+
+        var tempo = parseInt(prompt("Digite o tempo gasto na viagem em horas: "));
+        var velocidade = parseInt(prompt("Digite a velocidade média na viagem em km/h: "));
+        var distancia = tempo * velocidade
+        
+        alert("O gasto de combustível na viagem foi de: " + distancia / 12 + " litros. Os números da viagem são: " +
+            tempo + " Horas gastas, " + velocidade + "kh/h de velocidade média, " + distancia +
+            " kilometros de distância percorrida e " + distancia / 12 + " litros de combustível gastos.");
+    </script>
+
+</body>
+
+</html>

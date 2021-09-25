@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Apostila">
+    <meta name="keywords" content="Javascript">
+    <meta name="author" content="Lucas">
+
+    <title>Apostila Manzano Página 66 atividade 6-1-I</title>
+</head>
+
+<body>
+    <script>
+        /*Escreva um programa que apresente a série de Fibonacci até o décimo quinto termo. A série de 
+Fibonacci é formada pela seqüência: 1, 1, 2, 3, 5, 8, 13, 21, 34, ..., etc. Esta série se caracteriza 
+pela soma de um termo atual com o seu anterior subseqüente, para que seja formado o próximo 
+valor da seqüência. Portanto começando com os números 1, 1 o próximo termo é 1+1=2, o próximo 
+é 1+2=3, o próximo é 2+3=5, o próximo 3+5=8, etc.*/
+
+        var f1 = 1;
+        var f2 = 1;
+        var f3 = 0;
+        
+        for (var contador = 0; contador < 16; contador++) {
+            f1 = f2 + f3
+            f3 = f2
+            f2 = f1
+            alert(f1)
+        }
+    </script>
+</body>
+
+</html>

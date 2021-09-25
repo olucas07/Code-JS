@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Apostila">
+    <meta name="keywords" content="Javascript">
+    <meta name="author" content="Lucas">
+
+    <title>Apostila Manzano Página 25 atividade K</title>
+</head>
+
+<body>
+    <script>
+        /*Elaborar um programa que efetue a apresentação do valor da conversão em dólar de um valor lido em 
+real. O programa deve solicitar o valor da cotação do dólar e também a quantidade de reais disponível 
+com o usuário, para que seja apresentado o valor em moeda americana.*/
+
+        var cota = parseFloat(prompt("Digite quantos dolares vale um real: "));
+        var real = parseFloat(prompt("Digite o quantos reais deseja converter: "));
+        
+        alert("O valor de US$:" + real.toFixed(2) + " equivale a R$:" + (real * cota).toFixed(2));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Exercício 7. a da Apostila">
+    <meta name="keywords" content="Javascript">
+    <meta name="author" content="Lucas">
+    
+    <title>Apostila Manzano Página 46 atividade C</title>
+</head>
+<body>
+    <script>
+/*Elaborar um programa que apresente no final o somatório dos valores pares existentes na faixa de 
+1 até 500.*/
+
+        var contador = 1;
+        var numero = 0;
+
+        while (contador < 501) {
+            if (contador % 2 == 0) {
+                numero += contador;
+            }
+            contador += 1;
+        }
+
+        alert("A somas de todos os números inteiros e positivos de 1 até 500 é " + numero);
+    </script>
+</body>
+</html>

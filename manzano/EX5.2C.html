@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Apostila">
+    <meta name="keywords" content="Javascript">
+    <meta name="author" content="Lucas">
+
+    <title>Apostila Manzano Página 50 atividade 5-1-C</title>
+</head>
+
+<body>
+    <p id="saida"></p>
+    <script>
+        /*Apresentar todos os números divisíveis por 4 que sejam menores que 200. Para verificar se o 
+número é divisível por 4, efetuar dentro da malha a verificação lógica desta condição com a 
+instrução se, perguntando se o número é divisível; sendo, mostre-o; não sendo, passe para o 
+próximo passo. A variável que controlará o contador deve ser iniciada com o valor 1. */
+
+        var texto = "";
+        var cont = 1;
+
+        do {
+            ;
+            if (cont % 4 == 0) {
+                texto += "<br>" + cont;
+            }
+            cont++;
+        } while (cont <= 200)
+
+        document.getElementById('saida').innerHTML = texto;
+    </script>
+</body>
+
+</html>

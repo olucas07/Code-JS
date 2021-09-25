@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Apostila">
+    <meta name="keywords" content="Javascript">
+    <meta name="author" content="Lucas">
+    
+    <title>Apostila Manzano Página 50 atividade 5-1-G</title>
+</head>
+<body>
+    <script>
+/*Elaborar um programa que apresente como resultado o valor do fatorial dos valores ímpares 
+situados na faixa numérica de 1 a 10. */
+
+        var total = 0;
+        var contador = 1;
+        var contador2;
+        var valor;
+        do {
+            valor = 1;
+           if (contador % 2 != 0 ) {
+               contador2 = contador
+               do {
+                  valor = valor * contador2; 
+                  contador2--;
+               } while (contador2 >= 1)
+               
+               alert(valor);
+           }
+          contador ++; 
+        } while (contador <= 10)
+    </script>
+</body>
+</html>

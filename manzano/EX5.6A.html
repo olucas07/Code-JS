@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Apostila">
+    <meta name="keywords" content="Javascript">
+    <meta name="author" content="Lucas">
+
+    <title>Apostila Manzano Página 66 atividade 6-1-A</title>
+</head>
+
+<body>
+    <p id="saida"></p>
+    <script>
+        /*Apresentar os quadrados dos números inteiros de 15 a 200. */
+
+        var texto = "";
+        for (let contador = 15; contador <= 200; contador++) {
+            texto += "<br>" + (contador ** 2);
+        }
+        
+        document.getElementById('saida').innerHTML = texto;
+    </script>
+</body>
+
+</html>

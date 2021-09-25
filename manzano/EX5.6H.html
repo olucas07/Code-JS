@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h2, initial-scale=1.0">
+    <meta name="description" content="Apostila">
+    <meta name="keywords" content="Javascript">
+    <meta name="author" content="Lucas">
+
+    <title>Apostila Manzano Página 66 atividade 6-1-H</title>
+</head>
+
+<body>
+    <script>
+        /*Elaborar um programa que apresente como resultado o valor de uma potência de uma base 
+qualquer elevada a um expoente qualquer, ou seja, de BE
+, em que B é o valor da base e E o valor 
+do expoente. Observe que neste exercício não pode ser utilizado o operador de exponenciação do 
+portuguol (^).*/
+
+        var numero
+        var resultado = 1;
+
+        numero = parseFloat(prompt("Digite o número a ser elevado: "));
+
+        for (var expoente = parseInt(prompt("Digite o expoente: ")); expoente > 0; expoente--) {
+            resultado = resultado * numero;
+        }
+        alert(resultado)
+    </script>
+</body>
+
+</html>
