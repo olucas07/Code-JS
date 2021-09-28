@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang=" pt-br ">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE = edge ">
+    <meta name=" viewport " content=" width = device-width, initial-scale = 1.0 ">
+    <meta name=" descrição " content=" Exercício da apostila num: 13 ">
+    <meta name=" autor " content="Lucas">
+    <meta name=" palavras-chave " content=" apostila, JavaScript">
+    <title> Exercício 13 </title>
+</head>
+
+<body>
+    <h1>Exercício 13</h1>
+    <p>Descrição: Faça um algoritmo que leia três notas de um aluno, calcule e escreva a média final deste aluno.
+        Considerar que a média é ponderada e que o peso das notas é 2, 3 e 5. Fórmula para o cálculo da média
+        final é: </p>
+
+    <script>
+        var nota1 = parseFloat(prompt("Digite a primeira nota: "));
+        var nota2 = parseFloat(prompt("Digite a segunda nota: "));
+        var nota3 = parseFloat(prompt("Digite a terceira nota: "));
+        var media = (nota1 * 2 + nota2 * 3 + nota3 * 5) / 10;
+
+        alert("A média final é de: " + media);
+    </script>
+</body>
+
+</html>

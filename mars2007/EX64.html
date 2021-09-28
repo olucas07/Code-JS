@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang=" pt-br ">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE = edge ">
+    <meta name=" viewport " content=" width = device-width, initial-scale = 1.0 ">
+    <meta name=" descrição " content=" Exercício da apostila num: 64 ">
+    <meta name=" autor " content="Lucas">
+    <meta name=" palavras-chave " content=" apostila, JavaScript">
+    <title> Exercício 64 </title>
+</head>
+
+<body>
+ 
+    <p>Descrição: Seja o seguinte algoritmo:
+        Faça um teste de mesa e complete o quadro a seguir para os seguintes valores das variáveis: </p>
+
+    <script>
+        let a = parseInt(prompt("Digite um valor para a: "));
+        let b = parseInt(prompt("Digite um valor para b: "));
+        let c = parseInt(prompt("Digite um valor para c: "));
+
+        if ((a < b + c) && (b < a + b) && (c < a + b)) {
+            if ((a = b) && (b = c)) {
+                var mens = "Triangulo Equilátero";
+            } 
+            else if ((a == b) || (b == c) || (c == a)) {
+                var mens = "Triangulo Isósceles";
+            } 
+            else {
+                var mens = "Triangulo Escaleno";
+            }
+
+        } else {
+            var mens = "Não é possível formar um triangulo";
+        }
+
+        alert(mens);
+    </script>
+</body>
+
+</html>

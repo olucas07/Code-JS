@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang=" pt-br ">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE = edge ">
+    <meta name=" viewport " content=" width = device-width, initial-scale = 1.0 ">
+    <meta name=" descrição " content=" Exercício da apostila num: 61 ">
+    <meta name=" autor " content="Lucas">
+    <meta name=" palavras-chave " content=" apostila, JavaScript">
+    <title> Exercício 61 </title>
+</head>
+
+<body>
+
+    <p>Descrição:  Faça um algoritmo para ler: a descrição do produto (nome), a quantidade adquirida e o preço
+        unitário. Calcular e escrever o total (total = quantidade adquirida * preço unitário), o desconto e o total
+        a pagar (total a pagar = total - desconto), sabendo-se que:
+         - Se quantidade <= 5 o desconto será de 2%
+         - Se quantidade > 5 e quantidade <=10 o desconto será de 3%
+         - Se quantidade > 10 o desconto será de 5%  </p>
+
+    <script>
+        let produto = prompt("Digite o nome do produto: ");
+        let preco = parseFloat(prompt("Digite o preço do produto: "));
+        let qnt = parseInt(prompt("Digite a quantidade de produtos que você vai levar: "));
+        let total = preco * qnt; 
+
+        if (qnt <= 5) {
+             total = total - total * 0.02;
+        } else if (qnt > 5 && qnt <= 10){
+             total = total - total * 0.03;
+        } else {
+             total = total - total * 0.05;
+        }
+
+        alert("O valor a ser pago é: R$ " + total.toFixed(2));
+    </script>
+</body>
+
+</html>

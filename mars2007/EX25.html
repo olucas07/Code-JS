@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang=" pt-br ">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE = edge ">
+    <meta name=" viewport " content=" width = device-width, initial-scale = 1.0 ">
+    <meta name=" descrição " content=" Exercício da apostila num: 13 ">
+    <meta name=" autor " content="Lucas">
+    <meta name=" palavras-chave " content=" apostila, JavaScript">
+    <title> Exercício 13 </title>
+</head>
+
+<body>
+    <h1>Exercício 25</h1>
+    <p>Descrição: Faça um algoritmo para ler: número da conta do cliente, saldo, débito e crédito. Após, calcular e
+        escrever o saldo atual (saldo atual = saldo - débito + crédito). Também testar se saldo atual for maior
+        ou igual a zero escrever a mensagem 'Saldo Positivo', senão escrever a mensagem 'Saldo Negativo'.</p>
+
+    <script>
+        var num_conta = parseInt(prompt("Digite o número da sua conta: "));
+        var saldo = parseFloat(prompt("Digite o seu saldo: "));
+        var debito = parseFloat(prompt("Valor do débito: "));
+        var credito = parseFloat(prompt("Digite o valor do credito: "));
+        var resultado = (saldo - debito + credito).toFixed(2);
+
+        if (resultado >= 0){
+            alert("Você esta com R$ " + resultado + " de saldo");
+        } else {
+            alert("Você está devendo R$ " + resultado);
+        }
+
+    </script>
+</body>
+
+</html>

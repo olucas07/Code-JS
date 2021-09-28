@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang=" pt-br ">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE = edge ">
+    <meta name=" viewport " content=" width = device-width, initial-scale = 1.0 ">
+    <meta name=" descrição " content=" Exercício da apostila num: 13 ">
+    <meta name=" autor " content="Lucas">
+    <meta name=" palavras-chave " content=" apostila, JavaScript">
+    <title> Exercício 19 </title>
+</head>
+
+<body>
+    <h1>Exercício 19</h1>
+    <p>Descrição: Ler o ano atual e o ano de nascimento de uma pessoa. Escrever uma mensagem que diga se ela
+        poderá ou não votar este ano (não é necessário considerar o mês em que a pessoa nasceu).</p>
+
+    <script>
+        do {
+            var n1 = parseInt(prompt("Digite um valor: "));
+            var n2 = parseInt(prompt("Digite um valor diferente: "));
+        }
+        while (n1 == n2);
+        if (n1 > n2) {
+            alert("o maior numero é " + n1);
+        } else {
+            alert("o maior numero é " + n2);
+        }
+    </script>
+</body>
+
+</html>

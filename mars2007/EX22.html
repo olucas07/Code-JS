@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang=" pt-br ">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE = edge ">
+    <meta name=" viewport " content=" width = device-width, initial-scale = 1.0 ">
+    <meta name=" descrição " content=" Exercício da apostila num: 13 ">
+    <meta name=" autor " content="Lucas">
+    <meta name=" palavras-chave " content=" apostila, JavaScript">
+    <title> Exercício 22 </title>
+</head>
+
+<body>
+    <h1>Exercício 22</h1>
+    <p>Descrição: A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais
+        de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%.
+        Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva
+        o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas
+        (considere que o mês possua 4 semanas exatas).</p>
+
+    <script>
+        var horas_trabalhadas = parseFloat(prompt("Digite quantas horas foram trabalhadas neste mes"));
+        horas_trabalhadas -= 160
+        var valor_hora = parseFloat(prompt("Digite o valor por a quantidade de horas trabalhadas"));
+        if (horas_trabalhadas > 0) {
+            var salario = (valor_hora * 160) * 1.5;
+
+        } else {
+            var salario = valor_hora * 160;
+
+        }
+        alert("O salário do funcionário sera de: R$" + salario.toFixed(2));
+    </script>
+</body>
+
+</html>

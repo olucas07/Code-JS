@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang=" pt-br ">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE = edge ">
+    <meta name=" viewport " content=" width = device-width, initial-scale = 1.0 ">
+    <meta name=" descrição " content=" Exercício da apostila num: 13 ">
+    <meta name=" autor " content="Lucas">
+    <meta name=" palavras-chave " content=" apostila, JavaScript">
+    <title> Exercício 23 </title>
+</head>
+
+<body>
+    <h1>Exercício 23</h1>
+    <p>Descrição: Para o enunciado a seguir foi elaborado um algoritmo em Português Estruturado que contém
+        erros, identifique os erros no algoritmo apresentado abaixo:
+        Enunciado: Tendo como dados de entrada o nome, a altura e o sexo (M ou F) de uma pessoa, calcule
+        e mostre seu peso ideal, utilizando as seguintes fórmulas:</p>
+
+    <pre>
+- para sexo masculino: peso ideal = (72.7 * altura) - 58
+- para sexo feminino: peso ideal = (62.1 * altura) - 44.7
+inicio
+ler nome
+ler sexo
+se sexo = M então
+peso_ideal  (72.7 * altura) - 58
+senão
+peso_ideal  (62.1 * altura) – 44.7
+fim_se
+escrever peso_ideal
+fim        
+    </pre>
+
+    <script>
+        var nome = prompt("Digite o seu nome: ");
+        var sexo = prompt("Digite o seu sexo: ");
+        var altura = parseFloat(prompt("Digite sua altura: "));
+        var peso = parseFloat(prompt("Digite o seu peso: "));
+
+        if (sexo === "m") {
+            var peso_ideal = (72.7 * altura) - 58;
+        } else {
+            var peso_ideal = (68 * altura) - 44.7;
+        }
+        alert(nome + "O peso ideal para você é: " + peso_ideal.toFixed(2) + "kg");
+    </script>
+</body>
+
+</html>

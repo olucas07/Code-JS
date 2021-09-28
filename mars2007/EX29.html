@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang=" pt-br ">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE = edge ">
+    <meta name=" viewport " content=" width = device-width, initial-scale = 1.0 ">
+    <meta name=" descrição " content=" Exercício da apostila num: 13 ">
+    <meta name=" autor " content="Lucas">
+    <meta name=" palavras-chave " content=" apostila, JavaScript">
+    <title> Exercício 29 </title>
+</head>
+
+<body>
+    <h1>Exercício 29</h1>
+    <p>Descrição: Ler 3 valores (considere que não serão informados valores iguais) e escrever a soma dos 2
+        maiores.</p>
+    <script>
+        var valor1 = parseFloat(prompt("Digite o primeiro valor valor: "));
+        var valor2 = parseFloat(prompt("Digite o segundo valor valor: "));
+        var valor3 = parseFloat(prompt("Digite o terceiro valor valo: "));
+
+        if (valor1 > valor2 & valor1 > valor3) {
+            if (valor2 > valor3) {
+                alert("O resultado da soma dos dois maiores valores digitados é " + (valor1 + valor2));
+            } else {
+                alert("O resultado da soma dos dois maiores valores digitados é " + (valor1 + valor3));
+            }
+
+        } else if (valor2 > valor3) {
+            if (valor3 > valor1) {
+                alert("O resultado da soma dos dois maiores valores digitados é " + (valor2 + valor3));
+            } else {
+                alert("O resultado da soma dos dois maiores valores digitados é " + (valor1 + valor2));
+            }
+            
+        } else {
+            if (valor1 > valor2) {
+                alert("O resultado da soma dos dois maiores valores digitados é " + (valor1 + valor3));
+            } else {
+                alert("O resultado da soma dos dois maiores valores digitados é " + (valor2 + valor3));
+            }
+        }
+    </script>
+</body>
+
+</html>

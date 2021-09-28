@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang=" pt-br ">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE = edge ">
+    <meta name=" viewport " content=" width = device-width, initial-scale = 1.0 ">
+    <meta name=" descrição " content=" Exercício da apostila num: 13 ">
+    <meta name=" autor " content="Lucas">
+    <meta name=" palavras-chave " content=" apostila, JavaScript">
+    <title> Exercício 26 </title>
+</head>
+
+<body>
+    <h1>Exercício 26</h1>
+    <p>Descrição:Faça um algoritmo para ler: quantidade atual em estoque, quantidade máxima em estoque e
+        quantidade mínima em estoque de um produto. Calcular e escrever a quantidade média ((quantidade
+        média = quantidade máxima + quantidade mínima)/2). Se a quantidade em estoque for maior ou igual
+        a quantidade média escrever a mensagem 'Não efetuar compra', senão escrever a mensagem 'Efetuar
+        compra'. </p>
+
+    <script>
+        var qnt_atualEstoque = parseInt(prompt("Digite a quantidade que tem no estoque agora: "));
+        var qnt_maxEstoque = parseInt(prompt("Digite a quantidade máxima que o estoque pode ter: "));
+        var qnt_minEstoque = parseInt(prompt("Digite a quantidade mínima que o estoque pode ter: "));
+        var media = (qnt_maxEstoque + qnt_minEstoque) / 2;
+
+        alert("A media " + media)
+        if (qnt_atualEstoque >= media) {
+            alert("Não efeturar a compra! ");
+        } else {
+            alert("Efetuar a compra! ");
+        }
+    </script>
+</body>
+
+</html>

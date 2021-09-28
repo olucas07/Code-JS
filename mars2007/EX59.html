@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang=" pt-br ">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE = edge ">
+    <meta name=" viewport " content=" width = device-width, initial-scale = 1.0 ">
+    <meta name=" descrição " content=" Exercício da apostila num: 59 ">
+    <meta name=" autor " content="Lucas">
+    <meta name=" palavras-chave " content=" apostila, JavaScript">
+    <title> Exercício 9 </title>
+</head>
+
+<body>
+  
+    <p>Descrição: Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$ 25,00, receberá
+        ainda um desconto de 10% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de
+        morangos e a quantidade (em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente.</p>
+
+    <script>
+        var qnt_morangos = parseFloat(prompt("Digite quantos kg de morangos você vai comprar: "));
+        var qnt_maca = parseFloat(prompt("Digite quantos kg de maçã você vai comprar: "));
+
+        if (qnt_morangos >= 5){
+            var  tot_morango = qnt_morangos * 2.2;
+        } else {
+            var tot_morango = qnt_morangos * 2.5;
+        }
+        if (qnt_maca >= 5){
+            var tot_maca = qnt_maca * 1.5;
+        } else {
+            var tot_maca = qnt_maca * 1.8;
+        }
+        
+        alert("O valor a ser pago é: R$" + (tot_maca + tot_morango).toFixed(2));
+    </script>
+</body>
+
+</html>

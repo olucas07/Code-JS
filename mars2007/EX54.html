@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang=" pt-br ">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE = edge ">
+    <meta name=" viewport " content=" width = device-width, initial-scale = 1.0 ">
+    <meta name=" descrição " content=" Exercício da apostila num: 51 ">
+    <meta name=" autor " content="Lucas">
+    <meta name=" palavras-chave " content=" apostila, JavaScript">
+    <title> Exercício 51 </title>
+</head>
+
+<body>
+    <h1>Exercício 33</h1>
+    <p>Descrição: Ler dois valores e imprimir uma das três mensagens a seguir:
+        ‘Números iguais’, caso os números sejam iguais
+        ‘Primeiro é maior’, caso o primeiro seja maior que o segundo;
+        ‘Segundo maior’, caso o segundo seja maior que o primeiro. </p>
+
+    <script>
+        var n1 = parseInt(prompt("Digite o primeiro numero: "));
+        var n2 = parseInt(prompt("Digite o segundo numero: "));
+
+        if (n1 > n2) {
+            alert("O numero " + n1 + " é maior");
+
+        } else if (n2 > n1) {
+            alert("O numero " + n2 + " é maior");
+
+        } else {
+            alert("Os números são iguais!");
+        }
+    </script>
+</body>
+
+</html>

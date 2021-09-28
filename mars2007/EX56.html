@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang=" pt-br ">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE = edge ">
+    <meta name=" viewport " content=" width = device-width, initial-scale = 1.0 ">
+    <meta name=" descrição " content=" Exercício da apostila num: 56 ">
+    <meta name=" autor " content="Lucas">
+    <meta name=" palavras-chave " content=" apostila, JavaScript">
+    <title> Exercício 56 </title>
+</head>
+
+<body>
+  
+    <p>Descrição: Escreva  um  algoritmo  que  leia  o  número  de  litros  vendidos  e  o  tipo  de  combustível  (codificado  da 
+        seguinte  forma:  A-álcool,  G-gasolina),  calcule  e  imprima  o  valor  a  ser  pago  pelo  cliente  sabendo-se 
+        que o preço do litro da gasolina é R$ 3,30 e o preço do litro do álcool é R$ 2,90. </p>
+
+    <script>
+        var qnt_litros = parseFloat(prompt("Digite a quantidade de litros:"));
+        var tipo_combustivel = prompt("Selecione:\nA-álcool\nG-gasolina").toUpperCase();
+
+        if (tipo_combustivel === "A"){
+            var resultado = qnt_litros * 2.9;
+        } else {
+            var resultado = qnt_litros * 3.3;
+        }
+
+        alert("O preço para se pagar é: R$"+resultado.toFixed(2));
+    </script>
+</body>
+
+</html>

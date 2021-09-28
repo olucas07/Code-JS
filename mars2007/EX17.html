@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang=" pt-br ">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE = edge ">
+    <meta name=" viewport " content=" width = device-width, initial-scale = 1.0 ">
+    <meta name=" descrição " content=" Exercício da apostila num: 13 ">
+    <meta name=" autor " content="Lucas">
+    <meta name=" palavras-chave " content=" apostila, JavaScript">
+    <title> Exercício 17 </title>
+</head>
+
+<body>
+    <h1>Exercício 17</h1>
+    <p>Descrição: Ler as notas da 1a. e 2a. avaliações de um aluno. Calcular a média aritmética simples e escrever
+        uma mensagem que diga se o aluno foi ou não aprovado (considerar que nota igual ou maior que 6 o
+        aluno é aprovado). Escrever também a média calculada.</p>
+
+    <script>
+        var nota1 = parseFloat(prompt("Valor da primeira nota: "));
+        var nota2 = parseFloat(prompt("Valor da segunda nota: "));
+        var media = (nota1 + nota2) / 2;
+
+        if (media >= 6) {
+            alert("O aluno foi APROVADO!");
+        } else {
+            alert("O aluno foi Reprovado!");
+        }
+        alert("A média final foi de: " + media);
+    </script>
+</body>
+
+</html>

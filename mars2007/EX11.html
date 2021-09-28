@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang=" pt-br ">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE = edge ">
+    <meta name=" viewport " content=" width = device-width, initial-scale = 1.0 ">
+    <meta name=" descrição " content=" Exercício da apostila num: 11 ">
+    <meta name=" autor " content="Lucas">
+    <meta name=" palavras-chave " content=" apostila, JavaScript">
+    <title> Exercício 11 </title>
+</head>
+
+<body>
+    <h1>Exercício 11</h1>
+    <p>Descrição: Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês,
+        mais uma comissão também fixa para cada carro vendido e mais 5% do valor das vendas por ele
+        efetuadas. Escrever um algoritmo que leia o número de carros por ele vendidos, o valor total de suas
+        vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário final do
+        vendedor.</p>
+
+    <script>
+        var salario_fixo = parseFloat(prompt("Digite o salário fixo: "));
+        var valor_venda = parseFloat(prompt("Digite o valor das vendas: "));
+        var carros_vendidos = parseInt(prompt("Digite o total de carros vendidos: "));
+        var valor_porCarro = parseFloat(prompt("Digite o valor que o vendedor ganha pro cada carro vendido: "));
+        var comissao = (carros_vendidos * valor_porCarro) + (valor_venda * 0.05);
+        var salario_total = comissao + salario_fixo; 
+
+        alert("O valor final do funcionário é de: R$" + salario_total.toFixed(2));
+    </script>
+</body>
+
+</html>

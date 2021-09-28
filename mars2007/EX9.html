@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang=" pt-br ">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE = edge ">
+    <meta name=" viewport " content=" width = device-width, initial-scale = 1.0 ">
+    <meta name=" descrição " content=" Exercício da apostila num: 8 ">
+    <meta name=" autor " content="Lucas">
+    <meta name=" palavras-chave " content=" apostila, JavaScript">
+    <title> Exercício 8 </title>
+</head>
+
+<body>
+    <h1>Exercício 9</h1>
+    <p>Descrição: Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de
+        reajuste.Calcular e escrever o valor do novo salário. </p>
+
+    <script>
+        var salario_atual = parseFloat(prompt("Digite o salário atual: R$"));
+        var reajuste = parseFloat(prompt("Digite a porcentagem do aumento do salário: "));
+        var salario_novo = salario_atual + (salario_atual * reajuste / 100);
+        alert("O valor do salário é de: R$" + salario_novo.toFixed(2))
+    </script>
+</body>
+
+</html>

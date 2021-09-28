@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang=" pt-br ">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE = edge ">
+    <meta name=" viewport " content=" width = device-width, initial-scale = 1.0 ">
+    <meta name=" descrição " content=" Exercício da apostila num: 10 ">
+    <meta name=" autor " content="Lucas">
+    <meta name=" palavras-chave " content=" apostila, JavaScript">
+    <title> Exercício 10 </title>
+</head>
+
+<body>
+    <h1>Exercício 10</h1>
+    <p>Descrição: O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do
+        distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor
+        seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro,
+        calcular e escrever o custo final ao consumidor. </p>
+
+    <script>
+        var custo_carro = parseFloat(prompt("Digite o valor de custo do carro: "));
+        const imposto = 0.45;
+        const distribuidor = 0.28;
+        
+        var total = custo_carro + (custo_carro * distribuidor) + (custo_carro * imposto);
+
+        window.alert("O custo final para o consumidor é de: R$ " + total.toFixed(2));
+    </script>
+</body>
+
+</html>

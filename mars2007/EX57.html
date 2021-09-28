@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang=" pt-br ">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <meta http-equiv=" X-UA-Compatible " content=" IE = edge ">
+    <meta name=" viewport " content=" width = device-width, initial-scale = 1.0 ">
+    <meta name=" descrição " content=" Exercício da apostila num: 57 ">
+    <meta name=" autor " content="Lucas">
+    <meta name=" palavras-chave " content=" apostila, JavaScript">
+    <title> Exercício 57 </title>
+</head>
+
+<body>
+
+    <p>Descrição: Escreva um algoritmo que leia as idades de 2 homens e de 2 mulheres (considere que as idades
+        dos homens serão sempre diferentes entre si, bem como as das mulheres). Calcule e escreva a soma
+        das idades do homem mais velho com a mulher mais nova, e o produto das idades do homem mais
+        novo com a mulher mais velha. </p>
+
+    <script>
+        var homem1 = parseInt(prompt("Digite a idade do primeiro homem: "));
+        var homem2 = parseInt(prompt("Digite a idade do segundo homem: "));
+        var mulher1 = parseInt(prompt("Digite a idade do primeira mulher: "));
+        var mulher2 = parseInt(prompt("Digite a idade da segunda mulher: "));
+
+        if (homem1 > homem2) {
+            var h_novo = homem2;
+            var h_velho = homem1;
+        } else {
+            var h_novo = homem1;
+            var h_velho = homem2;
+        }
+        if (mulher1 > mulher2) {
+            var m_novo = mulher2;
+            var m_velho = mulher1;
+        } else {
+            var m_novo = mulher1;
+            var m_velho = mulher2;
+        }
+
+        alert("Soma da idade do homem mais velho com a mulher mais nova: " + (h_velho + m_novo));
+        alert("O produto das idade do homem mais novo com a mulher mais velha" + (h_novo * m_velho));
+    </script>
+</body>
+
+</html>
